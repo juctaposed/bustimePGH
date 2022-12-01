@@ -14,7 +14,7 @@ Links may change as Port Authority undergoes a name change to Pittsburgh Regiona
 
 
 # Setup
-Install dotenv
+
 `npm install`
 
 ## Instructions to run
