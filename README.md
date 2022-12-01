@@ -14,17 +14,17 @@ Links may change as Port Authority undergoes a name change to Pittsburgh Regiona
 
 
 # Setup
+Install dotenv
 `npm install`
 
-Installs dotenv
-
+## Instructions to run
 -Create a config file, then create a .env file within the config
 
 -List your key/value in your environment variables as follows
 
 `BUSTIME_API_KEY = 'KEY_GOES_HERE'`
 
-Run bustime.js in a code editor of your choice
+-Run bustime.js in a code editor of your choice
 
 
 ## getroutes 
