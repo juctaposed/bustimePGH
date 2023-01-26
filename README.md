@@ -3,28 +3,21 @@
 This program processes Pittsburgh's Public Transit routes and stops information as JSON data through the Bustime API
 
 
-Request an API key from Port Authority's website ->
-https://www.rideprt.org/business-center/developer-resources/
-
-Bustime Developer Docs -> http://realtime.portauthority.org/bustime/apidoc/docs/DeveloperAPIGuide3_0.pdf
-
-Base URL for API -> http://truetime.rideprt.org/bustime/api/v3/
-
-Links may change as Port Authority undergoes a name change to Pittsburgh Regional Transit. This can also affect the rtpidatafeed parameters below
-
+Request an API key from Port Authority's website: https://www.rideprt.org/business-center/developer-resources/
 
 # Setup
 
-`npm install`
+1. Install dependencies:
 
-## Instructions to run
--Create a config file, then create a .env file within the config
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`npm install`
 
--List your key/value in your environment variables as follows
+1. Create a config folder, then create a .env file inside config
 
-`BUSTIME_API_KEY = 'KEY_GOES_HERE'`
+2. List your key/value in your environment variables as follows:
 
--Run bustime.js in a code editor of your choice
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`BUSTIME_API_KEY = 'KEY_GOES_HERE'`
+
+3. Run bustime.js
 
 
 ## getroutes 
