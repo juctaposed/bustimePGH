@@ -7,7 +7,25 @@ const trolleyRt = ['BLUE', 'RED', 'SLVR']
 const rtpi = ['Port%20Authority%20Bus', 'Light%20Rail']
 
 
-function getBusStops() {
+
+// fetch a url `http://truetime.rideprt.org/bustime/api/v3/getroutes?key=${BUSTIME_API_KEY}`
+// grab info from each route's rt element 
+
+
+
+// async function getBusRoutes() {
+//     let routeArray = []
+//     const result = await fetch(`http://truetime.rideprt.org/bustime/api/v3/getroutes?key=${BUSTIME_API_KEY}`)
+//     .then((response) => response.json())
+//     .then((data) => console.log(data));
+//     .catch(err)
+
+    // routeArray[i].push(route.rt)
+
+// }
+
+
+export function getBusStops() {
     let promiseArray = [];
     for(let i = 0; i < busRt.length; i++){
         promiseArray.push(fetch(`http://truetime.rideprt.org/bustime/api/v3/getstops?key=${BUSTIME_API_KEY}&rt=${busRt[i]}&rtpidatafeed=${rtpi[0]}&dir=OUTBOUND&format=json`))
@@ -18,7 +36,7 @@ function getBusStops() {
             .catch(err => console.log(err))
         // console.log(`Listing route(s) ${busRt[i]} for the Bus`)
 
-    
+    return promiseArray
 
     // console.log(`Listing route(s) ${busRt[i]}`)
 }
@@ -41,7 +59,12 @@ function getTrolleyStops() {
 }
 
 
-getTrolleyStops()
+// getTrolleyStops()
 
+async function getPatterns(){
+    const response = await fetch(`http://truetime.rideprt.org/bustime/api/v3/getpatterns?key=${BUSTIME_API_KEY}`)
+    console.log(response)
+    return response
+}
 
-
+getPatterns()
