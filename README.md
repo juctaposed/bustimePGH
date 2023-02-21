@@ -21,7 +21,6 @@ Request an API key from Port Authority's website: https://www.rideprt.org/busine
 
 
 ## getroutes 
-http://truetime.rideprt.org/bustime/api/v3/getroutes?key=BUSTIME_API_KEY
 
     Required Parameters
     (API key)
@@ -51,7 +50,7 @@ http://truetime.rideprt.org/bustime/api/v3/getroutes?key=BUSTIME_API_KEY
 
 
 ## getdirections
-http://truetime.rideprt.org/bustime/api/v3/getdirections?key=BUSTIME_API_KEY&rt=71A&rtpidatafeed=Port%20Authority%20Bus&dir=OUTBOUND
+
 
     Required Parameters
     (key, route, rtpidatafeed)
@@ -73,7 +72,7 @@ http://truetime.rideprt.org/bustime/api/v3/getdirections?key=BUSTIME_API_KEY&rt=
 
 
 ## getstops
-http://truetime.rideprt.org/bustime/api/v3/getstops?key=BUSTIME_API_KEY&rt=71A&rtpidatafeed=Port%20Authority%20Bus&dir=OUTBOUND
+
 
     Required Parameters
     (key, route, rtpidatafeed, direction)
