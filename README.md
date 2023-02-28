@@ -11,13 +11,13 @@ Request an API key from Port Authority's website: https://www.rideprt.org/busine
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`npm install`
 
-1. Create a config folder, then create a .env file inside config
+2. Create a config folder, then create a .env file inside config
 
-2. List your key/value in your environment variables as follows:
+3. List your key/value in your environment variables as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`BUSTIME_API_KEY = 'KEY_GOES_HERE'`
 
-3. Run bustime.js
+4. Run bustime.js
 
 
 ## getroutes 
