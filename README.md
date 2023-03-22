@@ -22,8 +22,9 @@ Request an API key from Port Authority's website: https://www.rideprt.org/busine
 
 ## getroutes 
 
-    Required Parameters
-    (API key)
+    Required Parameters -> (API key)
+    /bustime/api/v3/getroutes?key=${BUSTIME_API_KEY}
+    
 
     Returns
     (route, route name, route color, route display designator, rtpidatafeed)
@@ -52,8 +53,8 @@ Request an API key from Port Authority's website: https://www.rideprt.org/busine
 ## getdirections
 
 
-    Required Parameters
-    (key, route, rtpidatafeed)
+    Required Parameters -> (key, route, rtpidatafeed)
+    /bustime/api/v3/getstops?key=${BUSTIME_API_KEY}&rt=${busRt[i]}&rtpidatafeed=${rtpi[0]}
 
     Returns
     (direction)
@@ -74,8 +75,7 @@ Request an API key from Port Authority's website: https://www.rideprt.org/busine
 ## getstops
 
 
-    Required Parameters
-    (key, route, rtpidatafeed, direction)
+    Required Parameters -> (key, route, rtpidatafeed, direction)
 
 
     Returns
